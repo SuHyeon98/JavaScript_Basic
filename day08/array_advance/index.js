@@ -31,3 +31,4 @@ const arrEven = arr1.filter((x) => x % 2 == 0); // 짝수
 // sort
 const arr2 = [5, 2, 12, 7, 3, 9];
 arr2.sort((x, y) => x - y); // 오름차순 정렬
+console.log(arr2.sort((x, y) => x + y)); // 이것도 오름차순 정렬이 되는 이유는 뭘까
