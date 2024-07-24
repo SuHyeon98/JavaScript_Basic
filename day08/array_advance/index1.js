@@ -7,36 +7,36 @@ const starbucks = [
   { name: "자바칩프라푸치노", price: 5500, kcal: 340 },
 ];
 
-// // map : 새롭게 바꿈
-// // 모든 커피 가격 +1000
-// const upPrice = starbucks.map((x) => {
-//   x.price += 1000;
-//   return x;
-// });
-// console.log(upPrice);
+// map : 새롭게 바꿈
+// 모든 커피 가격 +1000
+const upPrice = starbucks.map((x) => {
+  x.price += 1000;
+  return x;
+});
+console.log(upPrice);
 
-// // 프라푸치노의 할인률 30% 적용
-// const sale = starbucks.map((x) => {
-//   x.price = x.name.includes("프라푸치노") ? x.price * 0.7 : x.price; //
-//   return x;
-// });
+// 프라푸치노의 할인률 30% 적용
+const sale = starbucks.map((x) => {
+  x.price = x.name.includes("프라푸치노") ? x.price * 0.7 : x.price; //
+  return x;
+});
 
-// console.log(sale);
+console.log(sale);
 
-// // kcal가 200 보다 작으면 1000원 할인 높으면 1000원 추가
-// const starbucksKcal = starbucks.map((x) => {
-//   x.price = x.kcal < 200 ? x.price - 1000 : x.price + 1000;
-//   return x;
-// });
+// kcal가 200 보다 작으면 1000원 할인 높으면 1000원 추가
+const starbucksKcal = starbucks.map((x) => {
+  x.price = x.kcal < 200 ? x.price - 1000 : x.price + 1000;
+  return x;
+});
 
-// console.log(starbucksKcal);
+console.log(starbucksKcal);
 
-// // 모든 메뉴 이름 앞에 제로 붙이고 kcal 0
-// const zero = starbucks.map((x) => {
-//   x.name = "제로 " + x.name;
-//   x.kcal = 0;
-//   return x;
-// });
+// 모든 메뉴 이름 앞에 제로 붙이고 kcal 0
+const zero = starbucks.map((x) => {
+  x.name = "제로 " + x.name;
+  x.kcal = 0;
+  return x;
+});
 
 // filter : 걸러주기
 // 프라푸치노만 남기기
