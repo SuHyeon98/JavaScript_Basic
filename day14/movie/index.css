@@ -1,0 +1,24 @@
+.theater {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.front {
+  border: 1px solid orange;
+}
+
+.middle {
+  border: 1px solid greenyellow;
+}
+
+.back {
+  border: 1px solid rgb(212, 64, 64);
+}
